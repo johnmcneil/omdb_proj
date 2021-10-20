@@ -1,9 +1,16 @@
-import logo from './logo.svg';
+import react, { useState } from 'react';
 import './App.css';
+import OmdbSearchForm from './components/OmdbSearchForm.js';
 
 function App() {
-  return (
+  const [title, setTitle] = useState("");
 
+  const search = (title) => {
+    setTitle(title);
+  }
+
+  return (
+    <OmdbSearchForm onSearch={search} />
   );
 }
 
