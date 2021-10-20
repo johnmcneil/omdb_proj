@@ -10,12 +10,10 @@ export default function OmdbSearchForm({ onSearch = f => f }) {
 		onSearch(titleProps.value);
 	}
 
-	console.log("titleProps", titleProps);
-
 	return (
 		<form onSubmit={submit}>
 			<label>Title:
-				<input {...titleProps} type="text" name="title" placeholder="movie title" value={titleProps.value} required />
+				<input {...titleProps} type="text" name="title" placeholder="movie title" required />
 			</label>
 			<input type="submit" value="Submit" />
 		</form>

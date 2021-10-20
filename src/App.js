@@ -1,6 +1,7 @@
 import react, { useState } from 'react';
 import './App.css';
-import OmdbSearchForm from './components/OmdbSearchForm.js';
+import OmdbSearchForm from './components/OmdbSearchForm';
+import MovieInfo from './components/MovieInfo';
 
 function App() {
   const [title, setTitle] = useState("");
@@ -10,7 +11,10 @@ function App() {
   }
 
   return (
-    <OmdbSearchForm onSearch={search} />
+    <>
+      <OmdbSearchForm onSearch={search} />
+      <MovieInfo title={title} />
+    </>
   );
 }
 
