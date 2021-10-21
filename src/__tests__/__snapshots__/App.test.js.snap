@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test testing omdb react app 1`] = `
+Array [
+  <form
+    onSubmit={[Function]}
+  >
+    <label>
+      Title:
+      <input
+        name="title"
+        onChange={[Function]}
+        placeholder="movie title"
+        required={true}
+        type="text"
+        value=""
+      />
+    </label>
+    <input
+      type="submit"
+      value="Submit"
+    />
+  </form>,
+  <h4>
+    loading...
+  </h4>,
+]
+`;
