@@ -30,6 +30,7 @@ export default function MovieInfo({ title }) {
 								<ListGroupItem>Rated: {data.Rated}</ListGroupItem>
 								<ListGroupItem>Country: {data.Country}</ListGroupItem>
 								<ListGroupItem>Runtime: {data.Runtime}</ListGroupItem>
+								<ListGroupItem>Plot: {data.Plot}</ListGroupItem>
 							</ListGroup>
 						</CardText>
 					</CardBody>
