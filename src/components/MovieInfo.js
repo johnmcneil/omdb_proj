@@ -13,5 +13,5 @@ export default function MovieInfo({ title }) {
 		return <pre>{JSON.stringify(error, null, 2)}</pre>;
 
 	if (data)
-		return <pre>{JSON.stringify(data, null , 2)}</pre>;
+		return <pre>{JSON.stringify(data, null, 2)}</pre>;
 }
