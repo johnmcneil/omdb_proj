@@ -13,8 +13,15 @@ export default function MovieInfo({ title }) {
 	if (error)
 		return <pre>{JSON.stringify(error, null, 2)}</pre>;
 
-	if (data)
-		return (
-			<MovieCard data={data} />			
-		);
+	console.log("data", data)
+	if (data) {
+		if (data.Response === "True" ) {
+			return (
+				<MovieCard data={data} />			
+			);			
+		}
+		else return null;
+	}
+
+
 }
