@@ -2,25 +2,73 @@
 
 exports[`snapshot test testing omdb react app 1`] = `
 Array [
-  <form
-    onSubmit={[Function]}
+  <div
+    className="mb-3 container"
   >
-    <label>
-      Title:
-      <input
-        name="title"
-        onChange={[Function]}
-        placeholder="movie title"
-        required={true}
-        type="text"
-        value=""
+    <div
+      className="jumbotron"
+    >
+      <h1
+        className="display-3"
+      >
+        Movie Search Tool
+      </h1>
+      <p
+        className="lead"
+      >
+        Search the 
+        <a
+          href="https://www.omdbapi.com/"
+        >
+          Open Movie Database API
+        </a>
+      </p>
+      <hr
+        className="my-2"
       />
-    </label>
-    <input
-      type="submit"
-      value="Submit"
-    />
-  </form>,
+      <p>
+        Search by title for a movie you want information about.
+      </p>
+    </div>
+  </div>,
+  <div
+    className="my-3 container"
+  >
+    <form
+      className=""
+      onSubmit={[Function]}
+    >
+      <div
+        className="row form-group"
+      >
+        <div
+          className="col-4"
+        >
+          <input
+            className="form-control"
+            id="title"
+            name="title"
+            onChange={[Function]}
+            placeholder="Movie Title"
+            required={true}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="col-sm-1"
+        >
+          <button
+            aria-label={null}
+            className="btn btn-secondary"
+            onClick={[Function]}
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>,
   <h4>
     loading...
   </h4>,

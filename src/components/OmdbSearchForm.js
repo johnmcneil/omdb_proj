@@ -1,5 +1,6 @@
 import react from 'react';
 import useInput from '../hooks/useInput';
+import { Container, Row, Col, Form, FormGroup, Label, Input, FormText, Button } from 'reactstrap';
 
 export default function OmdbSearchForm({ onSearch = f => f }) {
 	const [titleProps, resetTitle] = useInput("");
@@ -11,11 +12,17 @@ export default function OmdbSearchForm({ onSearch = f => f }) {
 	}
 
 	return (
-		<form onSubmit={submit}>
-			<label>Title:
-				<input {...titleProps} type="text" name="title" placeholder="movie title" required />
-			</label>
-			<input type="submit" value="Submit" />
-		</form>
+		<Container className="my-3">
+			<Form onSubmit={submit}>		
+				<FormGroup row>
+					<Col xs={4}>
+						<Input {...titleProps} id="title" type="text" name="title"  placeholder="Movie Title" required />
+					</Col>
+					<Col sm={1}>
+						<Button >Submit</Button>
+					</Col>
+				</FormGroup>
+			</Form>
+		</Container>
 	);
 }
